@@ -2,7 +2,7 @@ import { NextResponse } from 'next/server';
 import { Resend } from 'resend';
 
 // ดึงกุญแจจากไฟล์ .env มาใช้งาน
-const resend = new Resend(process.env.RESEND_API_KEY || 're_123');
+const resend = new Resend(process.env.RESEND_API_KEY || 're_FIX_123');
 
 export async function POST(request: Request) {
   try {
