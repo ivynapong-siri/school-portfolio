@@ -5,7 +5,8 @@ import Navbar from "@/app/components/Navbar";
 import AnimatedBackground from "@/app/components/AnimatedBackground";
 import Footer from "@/app/components/Footer"; // ✅ 1. Import Footer
 import { Poppins } from "next/font/google"; // ✅ 1. Import Poppins
-import { contain } from "three/src/extras/TextureUtils.js"; 
+import { contain } from "three/src/extras/TextureUtils.js";
+import { SpeedInsights } from "@vercel/speed-insights/next"; 
 
 const poppins = Poppins({
   weight: ["300", "400", "500", "600", "700"],
@@ -48,7 +49,7 @@ export default function RootLayout({
            {children}
            <Footer />
         </div>
-
+        <SpeedInsights />
       </body>
       
     </html>
